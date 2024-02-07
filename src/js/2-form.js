@@ -26,7 +26,7 @@ if (rawUpdate){
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
-    const rawData = localStorage.getItem(STORAGE_KEY)
+    const rawData = localStorage.getItem(STORAGE_KEY);
     if (localStorage.getItem(STORAGE_KEY) && form.email.value.trim() !== '' && form.message.value.trim() !== '') {
         console.log(JSON.parse(rawData));
         localStorage.removeItem(STORAGE_KEY);
